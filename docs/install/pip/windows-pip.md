@@ -5,7 +5,7 @@
 ### 1.1目前飞桨支持的环境
 
 * **Windows 7/8/10 专业版/企业版 (64bit)**
-* **GPU版本支持CUDA 10.1/10.2/11.1/11.2/11.6，且仅支持单卡**
+* **GPU版本支持CUDA 10.1/10.2/11.1/11.2/11.6/11.7，且仅支持单卡**
 * **Python 版本 3.6+/3.7+/3.8+/3.9+/3.10+ (64 bit)**
 * **pip 版本 20.2.2或更高版本 (64 bit)**
 
@@ -51,17 +51,21 @@
 
 * 如果您的计算机有NVIDIA® GPU，请确保满足以下条件并且安装GPU版PaddlePaddle
 
-  * **CUDA 工具包10.1/10.2 配合 cuDNN v7.6.5**
+  * **CUDA 工具包 10.1 配合 cuDNN v7.6.5**
 
-  * **CUDA 工具包 11.1 配合 cuDNN v8.1.1**
+  * **CUDA 工具包 10.2 配合 cuDNN v7.6.5(如需使用PaddleTensorRT推理，需配合TensorRT7.0.0.11)**
 
-  * **CUDA 工具包 11.2 配合 cuDNN v8.2.1**
+  * **CUDA 工具包 11.1 配合 cuDNN v8.1.1(如需使用PaddleTensorRT推理，需配合TensorRT8.0.3.4)**
 
-  * **CUDA 工具包 11.6 配合 cuDNN v8.4.0**
+  * **CUDA 工具包 11.2 配合 cuDNN v8.2.1(如需使用PaddleTensorRT推理，需配合TensorRT8.2.4.2)**
+
+  * **CUDA 工具包 11.6 配合 cuDNN v8.4.0(如需使用PaddleTensorRT推理，需配合TensorRT8.4.0.6)**
+
+  * **CUDA 工具包 11.7 配合 cuDNN v8.4.1(如需使用PaddleTensorRT推理，需配合TensorRT8.4.2.4)**
 
   * **GPU运算能力超过3.5的硬件设备**
 
-  * 注：目前官方发布的windows安装包仅包含 CUDA 10.1/10.2/11.1/11.2/11.6，如需使用其他cuda版本，请通过源码自行编译。您可参考NVIDIA官方文档了解CUDA和CUDNN的安装流程和配置方法，请见[CUDA](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/)，[cuDNN](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/)
+  * 注：目前官方发布的windows安装包仅包含 CUDA 10.1/10.2/11.1/11.2/11.6/11.7，如需使用其他cuda版本，请通过源码自行编译。您可参考NVIDIA官方文档了解CUDA、CUDNN和TensorRT的安装流程和配置方法，请见[CUDA](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/)，[cuDNN](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/)，[TensorRT](https://developer.nvidia.com/nvidia-tensorrt-download)
 
 
 
@@ -160,7 +164,6 @@
   python -m pip download paddlepaddle==2.3.2 -f https://www.paddlepaddle.org.cn/whl/windows/openblas/avx/stable.html --no-index --no-deps
   ```
 
-* 如果你想安装联编`tensorrt`的Paddle包，可以参考[下载安装Windows预测库](https://paddleinference.paddlepaddle.org.cn/user_guides/download_lib.html#windows)。
 
 
 

@@ -4,10 +4,10 @@
 
 * **Linux 版本 (64 bit)**
     * **CentOS 6 (不推荐，不提供编译出现问题时的官方支持)**
-    * **CentOS 7 (GPU 版本支持CUDA 10.1/10.2/11.1/11.2/11.6)**
+    * **CentOS 7 (GPU 版本支持CUDA 10.1/10.2/11.1/11.2/11.6/11.7)**
     * **Ubuntu 14.04 (不推荐，不提供编译出现问题时的官方支持)**
-    * **Ubuntu 16.04 (GPU 版本支持 CUDA 10.1/10.2/11.1/11.2/11.6)**
-    * **Ubuntu 18.04 (GPU 版本支持 CUDA 10.1/10.2/11.1/11.2/11.6)**
+    * **Ubuntu 16.04 (GPU 版本支持 CUDA 10.1/10.2/11.1/11.2/11.6/11.7)**
+    * **Ubuntu 18.04 (GPU 版本支持 CUDA 10.1/10.2/11.1/11.2/11.6/11.7)**
 * **Python 版本 3.6/3.7/3.8/3.9/3.10 (64 bit)**
 
 ## 选择CPU/GPU
@@ -16,13 +16,15 @@
 
 * 如果您的计算机有NVIDIA® GPU，请确保满足以下条件以编译GPU版PaddlePaddle
 
-    * **CUDA 工具包10.1/10.2配合cuDNN 7 (cuDNN版本>=7.6.5, 如需多卡支持，需配合NCCL2.7及更高)**
-    * **CUDA 工具包11.1配合cuDNN v8.1.1(如需多卡支持，需配合NCCL2.7及更高)**
-    * **CUDA 工具包11.2配合cuDNN v8.1.1(如需多卡支持，需配合NCCL2.7及更高)**
-    * **CUDA 工具包11.6配合cuDNN v8.4.0(如需多卡支持，需配合NCCL2.7及更高)**
+    * **CUDA 工具包10.1配合cuDNN 7 (cuDNN版本>=7.6.5, 如需多卡支持，需配合NCCL2.7及更高)**
+    * **CUDA 工具包10.2配合cuDNN 7 (cuDNN版本>=7.6.5, 如需多卡支持，需配合NCCL2.7及更高；如需使用PaddleTensorRT推理，需配合TensorRT7.0.0.11)**
+    * **CUDA 工具包11.1配合cuDNN v8.1.1(如需多卡支持，需配合NCCL2.7及更高；如需使用PaddleTensorRT推理，需配合TensorRT7.2.3.4)**
+    * **CUDA 工具包11.2配合cuDNN v8.1.1(如需多卡支持，需配合NCCL2.7及更高；如需使用PaddleTensorRT推理，需配合TensorRT8.0.3.4)**
+    * **CUDA 工具包11.6配合cuDNN v8.4.0(如需多卡支持，需配合NCCL2.7及更高；如需使用PaddleTensorRT推理，需配合TensorRT8.4.0.6)**
+    * **CUDA 工具包11.7配合cuDNN v8.4.1(如需多卡支持，需配合NCCL2.7及更高；如需使用PaddleTensorRT推理，需配合TensorRT8.4.2.4)**
     * **GPU运算能力超过3.5的硬件设备**
 
-        您可参考NVIDIA官方文档了解CUDA和CUDNN的安装流程和配置方法，请见[CUDA](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/)，[cuDNN](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/)
+        您可参考NVIDIA官方文档了解CUDA和CUDNN的安装流程和配置方法，请见[CUDA](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/)，[cuDNN](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/)，
 
 
 ## 安装步骤
